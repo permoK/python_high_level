@@ -1,6 +1,6 @@
-if __name__ == "__main__":
-    import add as ad
-    a=1
-    b=3
+def add(a,b):
+    addition = a + b
 
-    print(ad.add(a,b))
+    print(addition)
+
+
