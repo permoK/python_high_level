@@ -1,5 +1,5 @@
 #This function deletes an item at a specific position in a list
-def delete_at(my_list=[1,2,3,4,5], idx=3):
+def delete_at(my_list=[1,2,3,4,5], idx=5):
     #declare an empty list to store the new list
     new_list = []
 
@@ -7,7 +7,7 @@ def delete_at(my_list=[1,2,3,4,5], idx=3):
     length = len(my_list)
     
     #check if the idx is negative or out of range
-    if idx < 0 or idx > length:
+    if idx < 0 or idx >= length:
         print (my_list)
     else:
         #delete the element in idx specified
@@ -17,7 +17,7 @@ def delete_at(my_list=[1,2,3,4,5], idx=3):
                 elements = my_list[i]
                 new_list.append(elements)
         my_list = new_list
-
+        #print the new and updated list
         print(new_list)
         print(my_list)
 
