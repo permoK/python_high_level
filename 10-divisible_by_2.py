@@ -9,9 +9,10 @@ def divisible_by_2(my_list=[0,1,2,3,4,5,6]):
     for i in range(length):
         #check through the list items one by one if it is divisible by 2
         if my_list[i] % 2 == 0:
-            #store the results in a variable
+            
             print("{:d} {:s} divisible by 2".format(my_list[i], "is" ))
             divisible = True
+            #append the results in the variable
             new_list.append(divisible)
         else:
             print("{:d} {:s} not divisible by 2".format(my_list[i], "is" ))
