@@ -7,8 +7,7 @@ def square_matrix_simple(matrix=[[1, 2, 3],[4, 5, 6],[7, 8, 9]]):
         for j in i:
             row.append(j**2)
         new_matrix.append(row)
-            # new_matrix[i][j] = square
-            # print(square)
+        
 
     print(matrix)
     print(new_matrix)
