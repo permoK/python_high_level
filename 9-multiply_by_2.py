@@ -2,7 +2,7 @@ def multiply_by_2(a_dictionary):
 
     keys = (list(a_dictionary.keys()))
     keys.sort()
-    length = len(values)
+    length = len(keys)
 
     for i in range(length):
         print(f"{keys[i]}: {a_dictionary[keys[i]]*2}")
