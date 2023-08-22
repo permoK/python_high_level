@@ -1,3 +1,4 @@
+import sys
 def roman_to_int(roman_string):
     n = []
     romans = {
@@ -9,21 +10,25 @@ def roman_to_int(roman_string):
         "V": 5,
         "I": 1,
         }
-    length = len(roman_string)
-    for i in range(length):
-        current = i
-        next = i+1
-        if next == length:
-            next = i
+    try:
+        length = len(roman_string)
+        for i in range(length):
+            current = i
+            next = i+1
+            if next == length:
+                next = i
+                
+            if romans[roman_string[current]] >= romans[roman_string[next]]:
+                n.append(romans[roman_string[current]]*1)
+            elif romans[roman_string[current]] < romans[roman_string[next]]:
+                n.append(romans[roman_string[current]]*-1)
             
-        if romans[roman_string[current]] >= romans[roman_string[next]]:
-            n.append(romans[roman_string[current]]*1)
-        elif romans[roman_string[current]] < romans[roman_string[next]]:
-            n.append(romans[roman_string[current]]*-1)
-        
-    roman_number = sum(n)
-    print(roman_number)
+        roman_number = sum(n)
+        print(roman_number)
+    except KeyError:
+        print("None")
+        sys.exit(1)
     
-roman_string = 'XCV'
+roman_string = ''
 roman_to_int(roman_string)
 
