@@ -1,7 +1,6 @@
 def best_score(a_dictionary):
 
     score = list(a_dictionary.values())
-    key = list(a_dictionary.keys())
     score.sort(reverse=True)
 
     for (i, j) in a_dictionary.items():
