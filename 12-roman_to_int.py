@@ -26,7 +26,7 @@ def roman_to_int(roman_string):
         roman_number = sum(n)
         print(roman_number)
     except KeyError:
-        print("None")
+        print(0)
         sys.exit(1)
     
 roman_string = 'MMI'
