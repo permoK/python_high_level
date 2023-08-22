@@ -29,6 +29,6 @@ def roman_to_int(roman_string):
         print("None")
         sys.exit(1)
     
-roman_string = ''
+roman_string = 'MMI'
 roman_to_int(roman_string)
 
