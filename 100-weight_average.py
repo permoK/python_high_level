@@ -1,7 +1,12 @@
 def weight_average(my_list=[(1, 2), (2, 1), (3, 10), (4, 2)]):
+    total_prod = []
+    div_by = []
     for i, j in my_list:
-        print(i,j)
-
+        product = i*j
+        total_prod.append(product)
+        div_by.append(j)
+    average = (sum(total_prod))/ (sum(div_by))
+    print(f"Average: {average:0.2f}")
 
 weight_average()
       
