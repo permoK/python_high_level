@@ -1,7 +1,7 @@
 def safe_print_integer(value):
     try:
         value = int(value)
-        print(value)
+        print(f"{value:d}")
     except ValueError:
-        print(False)
-safe_print_integer(value=8)
+        print(f"{value} is not an integer")
+safe_print_integer(value="dd")
