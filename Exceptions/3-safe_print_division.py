@@ -3,10 +3,10 @@ def safe_print_division(a, b):
     try:
         results = a / b 
     except ZeroDivisionError:
-        print(None)
+        results = None
     finally:
-        print(f"Results: {results}")
+        return f"Results: {results}"
 
 a=12
-b=2
-safe_print_division(a,b)
+b=0
+print(safe_print_division(a,b))
