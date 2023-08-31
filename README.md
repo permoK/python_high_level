@@ -1,7 +1,7 @@
 # python_high_level
 
 ## Data structures
-0. Squared simple
+### 0. Squared simple
 
 Write a function that computes the square value of all integers of a matrix.
 
