@@ -161,6 +161,11 @@ Prototype: def complex_delete(a_dictionary, value):
 If the value doesn’t exist, the dictionary won’t change
 All keys having the searched value have to be deleted
 You are not allowed to import any module
+### 16. Bubble sort
+This is a simple DSA sorting algorithm for small tasks
+
+### 17. Quick Sort 
+This is a DSA sorting algorithm which is faster and has the best worst case.
 
 ## Exceptions
 ##### In this topic i will be able to answer the following using code examples:
