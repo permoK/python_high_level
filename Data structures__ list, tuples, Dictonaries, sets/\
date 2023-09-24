@@ -1,0 +1,9 @@
+def max_sum(arr=[1,-2, 3, 4, -1, 2, 1, -5, 4]):
+    length = len(arr)
+
+    left = 0
+    right = length - 1
+
+    print(arr[right])
+
+max_sum()
