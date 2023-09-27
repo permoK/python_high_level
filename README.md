@@ -167,8 +167,7 @@ This is a simple DSA sorting algorithm for small tasks
 ### 17. Quick Sort 
 This is a DSA sorting algorithm which is faster and has the best worst case.
 
-### 18. max_sum
-
+### 18. max_sum sub-array
  
 ## Exceptions
 ##### In this topic i will be able to answer the following using code examples:
